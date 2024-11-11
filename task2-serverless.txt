@@ -1,0 +1,13 @@
+Your goal is to create a simple deployment using Serverless Framework. 
+Assume that the version of the framework is 1.67.3.
+
+Requirements for the deployment:
+* The deployment is meant to be used in AWS and executes code written in Python 3.8
+* The handler's function name is hello_handler and it is located in the file helloer.py
+* The function should be invoked in response to an HTTP call to the /hello endpoint with the GET method (defined in a separate field)
+* The function name defined in the deployment should be helloer
+* The default region where the deployment should be placed is eu-central-1
+* Override the default stage with the dev-env value
+* CORS for this endpoint should be disabled
+* Provide the Serverless Framework's version constraints for this deployment - above version 1.5.0 and below version 2.8.8
+* The service name should be helloer-service
