@@ -37,3 +37,18 @@ pip3 install "uvicorn[standard]"
 pip3 freeze > requirements.txt
 ```
 
+## Docker build and run
+```bash
+# Build and run the application
+docker-compose build
+docker-compose up -d
+
+# Open the browser and navigate to http://127.0.0.1:8000
+
+# Stop the application
+docker-compose down
+
+# Check inside the container
+docker-compose exec fastapi bash
+
+```
