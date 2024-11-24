@@ -20,6 +20,7 @@ unit_tests/
 ```
 
 ## How to execute the Tests
+### With UnitTest
 
 ```bash
 # Run all filtest tests from a package
@@ -33,6 +34,33 @@ python -m unittest entities.unit_tests.test_shopping_cart -v
 
 # Run an specific test
 python -m unittest entities.unit_tests.test_shopping_cart.TestShoppingCart.test_add_product_iphone -v
+```
+
+### with Pytest
+```bash
+# Install pytest
+pip install pytest
+
+# Run all tests in a directory
+pytest -v -s entities/pytests
+```
+
+### Generating report with Coverage
+```bash
+# Install coverage
+pip install coverage
+
+# Run tests with coverage and unitest
+coverage run -m unittest discover -s entities/unit_tests
+
+# Run tests with coverage and pytest
+coverage run -m pytest entities/pytests
+
+# Generate report
+coverage report -m
+
+# Generate html report
+coverage html
 ```
 
 ## Test Organization
