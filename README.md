@@ -17,6 +17,9 @@ source .env/bin/activate
 
 # deactivate
 source deactivate
+
+# uninstall environment
+pyenv uninstall .env
 ```
 
 ## pip commands
@@ -33,3 +36,9 @@ pip3 freeze > requirements.txt
 pip3 install matplotlib
 
 ```
+
+# Python HTTP Server
+
+```bash
+python -m http.server 8000
+``` 
